@@ -1,0 +1,56 @@
+Customer Collection:
+
+db.createCollection("Customer")
+db.Customer.insert({
+    "Customer_id": 1,
+    "customer_Name": "John Doe",
+    "customer_Tel": "123-456-7890"
+})
+
+
+
+Product Collection:
+
+db.createCollection("Product")
+db.Product.insert({
+    "Product_id": 101,
+    "product_name": "Laptop",
+    "category": "Electronics",
+    "Price": 899.99
+})
+
+
+
+Orders Collection:
+
+db.createCollection("Orders")
+db.Orders.insert({
+    "Customer_id": 1,
+    "Product_id": 101,
+    "OrderDate": "2024-03-01",
+    "quantity": 2,
+    "total_amount": 1799.98
+})
+
+
+
+Insert into Product Table:
+
+INSERT INTO Product (Product_id, Product_Name, Category, Price)
+VALUES ('P03', 'Apple iPad Pro', 'Tablet', 5999),
+       ('P04', 'Sony 65" 4K TV', 'Electronics', 7999);
+
+Insert into Customer Table:
+
+INSERT INTO Customer (Customer_Id, Customer_Name, Customer_Tel)
+VALUES ('C03', 'FATIMA', '71234567'),
+       ('C04', 'KHALID', '72223344');
+
+Insert into Orders Table:
+
+INSERT INTO Orders (Customer_Id, Product_Id, OrderDate, Quantity, Total_amount)
+VALUES ('C03', 'P04', '2024-03-02', 1, 7999),
+       ('C04', 'P03', '2024-03-03', 2, 11998);
+
+
+
